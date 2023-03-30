@@ -6,8 +6,6 @@
 .wakeup-slider{
     padding-top: 8%;
     z-index: -1;
- 
-    /* border: 1px solid red; */
     width: 60%;
 }
 .wakeup-slider img{

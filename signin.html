@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+</head>
+<style>
+    * {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+
+    /* *******************************Signin***************************** */
+
+    .sign-in-container {
+        padding: 3%;
+    }
+
+    .sign-in-heading {
+        text-align: center;
+    }
+
+    .login-register {
+        display: flex;
+        width: 100%;
+    }
+
+    .login {
+        /* border: 1px solid red; */
+        padding: 2%;
+        width: 50%;
+    }
+
+    #sign-in-btn {
+        width: 25%;
+        height: 6vh;
+        letter-spacing: 4px;
+        background-color: #65c297;
+        color: white;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #submit-btn {
+        width: 25%;
+        height: 6vh;
+        letter-spacing: 4px;
+        background-color: white;
+        color: black;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    #submit-btn:hover {
+        background-color: #50514f;
+        color: white;
+    }
+
+    #email,
+    #pass,
+    #firstName,
+    #lastName,
+    #email-login,
+    #pass-login {
+        width: 100%;
+        padding: 1%;
+        height: 4vh;
+        margin-bottom: 3%;
+        margin-top: 1%;
+        outline: none;
+        border: 1px solid lightgrey;
+    }
+
+
+    .register {
+        /* border: 1px solid blue; */
+        margin-left: 5%;
+        padding: 2%;
+        width: 50%;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<body>
+    <!-- ********************************navbar*********************************** -->
+
+
+    <!-- ***********************************************Signin************************ -->
+    <div class="sign-in-container">
+        <div class="sign-in-heading">
+            <h3>Sign in to your account</h3>
+            <p id="our-brand">Our brand new site is live. Please create a new account to explore this experience.</p>
+        </div>
+        <div class="login-register">
+            <div class="login">
+                <h2>Login</h2>
+                <p>If you have an account, please sign in with your email address.</p>
+                <label for="email">Email</label><br>
+                <input type="text" id="email-login"><br>
+                <label for="pass">Password</label><br>
+                <input type="password" id="pass-login"><br>
+                <button id="sign-in-btn" onclick="onLogin()">SIGN IN</button>
+                <p>Forget your password ?</p>
+            </div>
+            <div class="register">
+                <h2>Create Customer</h2>
+                <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and
+                    more.</p>
+                <label for="firstName">First Name</label><br>
+                <input type="text" id="firstName"><br>
+                <label for="lastName">Last Name</label><br>
+                <input type="text" id="lastName"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="pass"><br>
+                <button id="submit-btn" onclick="onSignUp()">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <!-- ***********************************FOOTER*************************************** -->
+
+</body>
+</html>

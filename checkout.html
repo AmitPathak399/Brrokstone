@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        #left-page{
+            margin-left: 10%;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #img img {
+            width: 50vh;
+        }
+
+        #info {
+            display: flex;
+            margin-top: 5%;
+            gap: 10px;
+        }
+        #info a {
+            text-decoration: none;
+            color: #65c297;
+        }
+        form input {
+            margin-top: 15px;
+        }
+        #form1 input {
+            width: 500px;
+            height: 40px;
+            border-radius: 5px;
+            border:1px solid#adacac;
+        }
+        #form2 input {
+            width: 244px;
+            height: 40px;
+            border-radius: 5px;
+            border:1px solid#adacac;
+            
+        }
+        #botm {
+            margin-top: 20px;
+        }
+        #botm button{
+            margin-left: 30%;
+            width: 200px;
+            height: 50px;
+            background: #65c297;
+            border-radius: 10px;
+            color: #fff;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        #botm button:hover{
+            background: #1bc877;
+        }
+        #botm a{
+            text-decoration: none;
+            color: #65c297;
+        }
+        #right-page{
+            background: hsl(0, 5%, 88%);
+            width: 50%;
+            height: auto;
+            /* text-align: center; */
+        }
+        #right-page div{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+        #right-page div input{
+            width: 250px;
+            height: 35px;
+            margin-left: 10%;
+            border-radius: 5px;
+            border:1px solid#adacac;
+        }
+        #right-page div button{
+            width: 80px;
+            border-radius: 5px;
+            background: #c4c1c1;
+            border: none;
+            margin-right: 18%;
+            cursor: pointer;
+        }
+        #right-page div p{
+            margin-right: 10%;
+        }
+        #right-page #bot2{
+            margin-left: 20%;
+            font-size: small;
+            border:1px solid#d2d0d0;
+            width: 400px;
+            text-align: center;
+            height: 25px;
+            background: #fff;
+            border-radius: 5px;
+            
+        }
+        #right-page #bot2 a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left-page">
+            <div id="img">
+                <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/Brookstone_logo.webp?54754">
+            </div>
+            <div id="info">
+                <a href="#"><span>Cart</span></a>
+                <span>></span>
+                <span>information</span>
+                <span>></span>
+                <a href="#"><span>Shipping</span></a>
+                <span>></span>
+                <a href="#"><span>Payment</span></a>
+            </div>
+            <div id="info2">
+                <h3>Contact information</h3>
+                <span>pujan sharma(pujanshrma@gmail.com)</span>
+            </div>
+            <div id="form">
+                <h2>Shipping address</h2>
+                <form>
+                    <div id="form1">
+                        <input type="text" placeholder="Use a new address"><br>
+                        <input type="text" placeholder="Country/region"><br>
+                    </div>
+                    <div id="form2">
+                        <input type="text" placeholder="first nmae">
+                        <input type="text" placeholder="Last nmae"><br>
+                        <input type="text" placeholder="City">
+                        <input type="number" placeholder="Postal code"><br>
+                    </div>
+                    <div id="form1">
+                        <input type="text" placeholder="Address"><br>
+                        <input type="text" placeholder="Apartment"><br>
+                        <input type="Number" placeholder="Phone">
+                    </div>
+                </form>
+            </div>
+            <div id="botm">
+                <a href="#">< Return to cart</a>
+                <button>Continue to shipping</button>
+            </div>
+        </div>
+        <div id="right-page">
+            <div>
+                <p>Brookstone air PRO</p>
+                <p>$150.0</p>
+            </div>
+            <hr>
+            <div>
+                <input type="text" placeholder="Gift card or discouht code">
+                <button>Apply</button>
+            </div>
+            <hr>
+            <div>
+                <p>Subtotal</p>
+                <p>$150.00</p>
+            </div>
+            <div>
+                <p>Shipping</p>
+                <p>$27.79</p>
+            </div>
+            <hr>
+            <div>
+                <p>Total</p>
+                <p>usd <span>$177.79</span></p>
+            </div>
+            <p id="bot2">4 interest-free payments of $44.44 with <span>Klarna.</span><a href="#">Learn More</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

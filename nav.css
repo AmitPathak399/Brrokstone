@@ -24,6 +24,7 @@ width: 20%;
 }
 #logo-image{
     height: 8vh;
+    cursor: pointer;
 }
 .search{
     width: 50%;

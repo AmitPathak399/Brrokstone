@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brrokstome</title>
+    <title>Product-page</title>
     <link rel="stylesheet" href="nav.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
+    <!-- ---------------navbar----------------------- -->
     <nav class="navbar">
 
         <div class="nav-searchbar">
@@ -169,8 +169,59 @@
             </div>
         </div>
     </div>
+
+    <!-- -----------------------product------------------->
+
+    <div class="nav">
+        <select id="filter">
+            <option value="">Featured</option>
+            <option value="cafe">cafe</option>
+            <option value="ethnic">ethnic</option>
+            <option value="fast_food">fast_food</option>
+        </select>
+    </div>
+    <h1 id="alert"></h1>
+    <div id="restaurant-container">
+        <!-----Append All Products---->
+    </div>
+
+    <!-- --------------------footer--------------- -->
+    <div class="footer">
+        <div class="stay-loop">
+            <h2 id="loop-footer">Stay in the loop</h2>
+            <p id="sign-up-footer">Sign up and be the first to hear about new products and promotions!</p>
+            <div id="sign-up-now-footer">SIGN UP NOW</div>
+        </div>
+        <div class="footer-right">
+            <div class="shop-now">
+                <img src="https://cdn.shopify.com/s/files/1/0262/2226/4423/files/BKST_Klarna_Banner_Update_HP_Desktop_1600x.webp?v=1652916700"
+                    id="shop-now-image">
+            </div>
+            <div class="customer-service">
+                <div id="faq">
+                    <h3>SHOP BROOKSTONE.COM</h3>
+                    <p>Massage Chair Buyers Guide</p>
+                    <p>FAQ</p>
+                    <p>About Us</p>
+                    <p>Shopping Info</p>
+                    <p>Privacy Policy</p>
+                    <p>Prop 65</p>
+                    <p>Accessibility Statement</p>
+                </div>
+                <div id="contact-footer">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <p>Contact Us</p>
+                    <p>Return Policy</p>
+                    <p>Order Tracking</p>
+                    <p>Product Manuals</p>
+                    <p>Your California Privacy Rights</p>
+                    <p>Accessibility Mode</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script src="nav.js"></script>
+<script src="product.js"></script>
+
 </html>

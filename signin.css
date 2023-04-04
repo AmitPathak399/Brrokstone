@@ -1,0 +1,99 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* *******************************Signin***************************** */
+
+.sign-in-container {
+    padding: 3%;
+}
+
+.sign-in-heading {
+    text-align: center;
+}
+
+.login-register {
+    display: flex;
+    width: 100%;
+}
+
+.login {
+    /* border: 1px solid red; */
+    padding: 2%;
+    width: 50%;
+}
+
+#sign-in-btn {
+    width: 25%;
+    height: 6vh;
+    letter-spacing: 4px;
+    background-color: #65c297;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn {
+    width: 25%;
+    height: 6vh;
+    letter-spacing: 4px;
+    background-color: white;
+    color: black;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #50514f;
+    color: white;
+}
+
+#email,
+#pass,
+#firstName,
+#lastName,
+#email-login,
+#pass-login {
+    width: 100%;
+    padding: 1%;
+    height: 4vh;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+
+
+.register {
+    /* border: 1px solid blue; */
+    margin-left: 5%;
+    padding: 2%;
+    width: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .login,
+    .register {
+      width: 45%;
+      margin-bottom: 0;
+    }
+
+    .login {
+      margin-right: 10%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      visibility: hidden;
+    }
+  }

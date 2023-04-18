@@ -40,7 +40,7 @@ function displayfun(data) {
         name.classList.add("name");
 
         let price = document.createElement("p");
-        price.textContent = el.price;
+        price.textContent = `$ ${el.price}`;
         price.classList.add("price");
 
         btn = document.createElement("button");

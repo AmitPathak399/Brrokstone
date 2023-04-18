@@ -133,7 +133,7 @@
             </div>
             <div id="info2">
                 <h3>Contact information</h3>
-                <span>pujan sharma(pujanshrma@gmail.com)</span>
+                <span>amit pathak(pathakamit399@gmail.com)</span>
             </div>
             <div id="form">
                 <h2>Shipping address</h2>
@@ -156,7 +156,7 @@
                 </form>
             </div>
             <div id="botm">
-                <a href="#">< Return to cart</a>
+                <a href="cart.html">< Return to cart</a>
                 <button>Continue to shipping</button>
             </div>
         </div>
@@ -188,5 +188,33 @@
         </div>
     </div>
 </body>
-
+<script>
+    let adress=document.querySelector("#adress").value;
+    localStorage.setItem("adress",adress)
+    
+        let subtotal=localStorage.getItem("grandtotal")
+    
+    let mtotal=document.querySelector("#total");
+    mtotal.textContent=+subtotal
+    
+    
+    let total=document.querySelector("#subtotal");
+    total.textContent=+subtotal
+    let data=+subtotal+99.79
+    // let newdata=Math.floor(data)
+    console.log(Math.floor(data).toFixed(1))
+    // total
+    let sutotal=document.querySelector("#subdata");
+    sutotal.textContent=Math.floor(data).toFixed(2)
+    
+    
+        let useremail=localStorage.getItem("userdata");
+        let username=document.querySelector("#usernames")
+        username.textContent=useremail;
+        let btn=document.querySelector("#checkout");
+        btn.addEventListener("click",()=>{
+            window.location.href="./checkout.html"
+        })
+    </script>
+    
 </html>

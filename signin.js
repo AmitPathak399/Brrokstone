@@ -1,6 +1,6 @@
 let form = document.querySelector("#form");
-const singup = (e) => {
-    e.preventDefault
+const singup = () => {
+    event.preventDefault
     let payload = {
         firstname: document.querySelector("#firstName").value,
         lastname: document.querySelector("#lastName").value,
